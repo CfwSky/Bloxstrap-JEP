@@ -1,4 +1,4 @@
-﻿using Bloxstrap.Enums.FlagPresets;
+    using Bloxstrap.Enums.FlagPresets;
 using System.Windows.Forms;
 
 using Windows.Win32;
@@ -28,8 +28,16 @@ namespace Bloxstrap
 #endif
 
             { "Rendering.Framerate", "DFIntTaskSchedulerTargetFps" },
+            { "Rendering.IGFpsCap", "FFlagGameBasicSettingsFramerateCap5" },
+             { "Rendering.FramerateUncapper", "FFlagTaskSchedulerLimitTargetFpsTo2402" },
             { "Rendering.ManualFullscreen", "FFlagHandleAltEnterFullscreenManually" },
             { "Rendering.DisableScaling", "DFFlagDisableDPIScale" },
+
+            { "Rendering.QualityLevel", "DFIntDebugFRMQualityLevelOverride" },
+
+            { "Rendering.TextureQualityFlag", "DFFlagTextureQualityOverrideEnabled" },
+
+            { "Rendering.TextureQuality", "DFIntTextureQualityOverride" },
 
             { "Rendering.Materials.NewTexturePack", "FStringPartTexturePackTable2022" },
             { "Rendering.Materials.OldTexturePack", "FStringPartTexturePackTablePre2022" },
@@ -43,8 +51,11 @@ namespace Bloxstrap
             { "Rendering.Lighting.Voxel", "DFFlagDebugRenderForceTechnologyVoxel" },
             { "Rendering.Lighting.ShadowMap", "FFlagDebugForceFutureIsBrightPhase2" },
             { "Rendering.Lighting.Future", "FFlagDebugForceFutureIsBrightPhase3" },
+             { "Physics.Sound", "FFlagSoundsUsePhysicalVelocity" },
 
             { "UI.Hide", "DFIntCanHideGuiGroupId" },
+            { "UI.Menu.InGameChrome", "FFlagEnableInGameMenuChrome" },
+            { "UI.Menu.FullscreenBar", "FIntFullscreenTitleBarTriggerDelayMillis" },
 #if DEBUG
             { "UI.FlagState", "FStringDebugShowFlagState" },
 #endif
@@ -65,10 +76,10 @@ namespace Bloxstrap
         public static IReadOnlyDictionary<RenderingMode, string> RenderingModes => new Dictionary<RenderingMode, string>
         {
             { RenderingMode.Default, "None" },
-            // { RenderingMode.Vulkan, "Vulkan" },
+             { RenderingMode.Vulkan, "Vulkan" },
             { RenderingMode.D3D11, "D3D11" },
             { RenderingMode.D3D10, "D3D10" },
-            // { RenderingMode.OpenGL, "OpenGL" }
+             { RenderingMode.OpenGL, "OpenGL" }
         };
 
         public static IReadOnlyDictionary<LightingMode, string> LightingModes => new Dictionary<LightingMode, string>
@@ -77,15 +88,6 @@ namespace Bloxstrap
             { LightingMode.Voxel, "Voxel" },
             { LightingMode.ShadowMap, "ShadowMap" },
             { LightingMode.Future, "Future" }
-        };
-
-        public static IReadOnlyDictionary<MSAAMode, string?> MSAAModes => new Dictionary<MSAAMode, string?>
-        {
-            { MSAAMode.Default, null },
-            { MSAAMode.x1, "1" },
-            { MSAAMode.x2, "2" },
-            { MSAAMode.x4, "4" },
-            { MSAAMode.x8, "8" }
         };
 
         public static IReadOnlyDictionary<MaterialVersion, string> MaterialVersions => new Dictionary<MaterialVersion, string>
