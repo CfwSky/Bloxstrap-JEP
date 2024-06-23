@@ -1,5 +1,6 @@
 Bloxstrap but... with EXTRA presets :tongue: 
 
+some stuff might save incorrectly so please check and re-enable if they dont work
 
 Step 1: Open bloxstrap, go to the behavior tab, turn off automatic updates
 
