@@ -1,4 +1,6 @@
-﻿using System.Windows;
+#define STUDIO_FEATURES
+
+using System.Windows;
 using System.Windows.Forms;
 
 using Microsoft.Win32;
