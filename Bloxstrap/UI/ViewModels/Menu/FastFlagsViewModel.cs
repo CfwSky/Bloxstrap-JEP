@@ -1,4 +1,4 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
@@ -67,6 +67,32 @@ namespace Bloxstrap.UI.ViewModels.Menu
             get => int.TryParse(App.FastFlags.GetPreset("Rendering.Framerate"), out int x) ? x : 0;
             set => App.FastFlags.SetPreset("Rendering.Framerate", value == 0 ? null : value);
         }
+        public bool IGFpsSetting
+        { 
+            get => App.FastFlags.GetPreset("Rendering.IGFpsCap") == "False";
+            set => App.FastFlags.SetPreset("Rendering.IGFpsCap", value ? "False" : null);
+        }
+        public bool FramerateUncapper
+        { 
+            get => App.FastFlags.GetPreset("Rendering.FramerateUncapper") == "False";
+            set => App.FastFlags.SetPreset("Rendering.FramerateUncapper", value ? "False" : null);
+        }
+        public int QualityLevelOverride
+        {
+            get => int.TryParse(App.FastFlags.GetPreset("Rendering.QualityLevel"), out int x) ? x : 0;
+            set => App.FastFlags.SetPreset("Rendering.QualityLevel", value == 0 ? null : value);
+        }
+
+public bool TextureQualityEnabled
+        { 
+            get => App.FastFlags.GetPreset("Rendering.TextureQualityFlag") == "True";
+            set => App.FastFlags.SetPreset("Rendering.TextureQualityFlag", value ? "True" : null);
+        }
+        public int TextureQualityOverride
+        {
+            get => int.TryParse(App.FastFlags.GetPreset("Rendering.TextureQuality"), out int x) ? x : 0;
+            set => App.FastFlags.SetPreset("Rendering.TextureQuality", value == 0 ? null : value);
+        }
 
         public IReadOnlyDictionary<RenderingMode, string> RenderingModes => FastFlagManager.RenderingModes;
 
@@ -84,6 +110,21 @@ namespace Bloxstrap.UI.ViewModels.Menu
         {
             get => App.FastFlags.GetPreset("Rendering.DisableScaling") == "True";
             set => App.FastFlags.SetPreset("Rendering.DisableScaling", value ? "True" : null);
+        }
+        public bool InGameChromeEnabled
+        { 
+            get => App.FastFlags.GetPreset("UI.Menu.InGameChrome") == "True";
+            set => App.FastFlags.SetPreset("UI.Menu.InGameChrome", value ? "True" : null);
+        }
+        public int FullscreenTitleBar
+        {
+            get => int.TryParse(App.FastFlags.GetPreset("UI.Menu.FullscreenBar"), out int x) ? x : 1000;
+            set => App.FastFlags.SetPreset("UI.Menu.FullscreenBar", value == 1000 ? null : value);
+        }
+         public bool PhysicalSound
+        { 
+            get => App.FastFlags.GetPreset("Physics.Sound") == "True";
+            set => App.FastFlags.SetPreset("Physics.Sound", value ? "True" : null);
         }
 
         public bool AlternateGraphicsSelectorEnabled
