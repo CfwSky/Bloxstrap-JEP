@@ -12,4 +12,4 @@ Step 3: go to %localappdata%/Bloxstrap
 Step 4: paste the exe you downloaded into that folder where your current bloxstrap is
 
 
-step 5: PROFIT
+step 5: PROFIT (and do NOT use the language option)
