@@ -807,7 +807,7 @@ Do NOT use this to import large "flag lists" made by other people that promise t
     <value>Fixed Graphics Quality</value>
   </data>
   <data name="Menu.FastFlags.Presets.FullscreenTitleBar.Description" xml:space="preserve">
-    <value>Set a number for how long until the titlebar appears in fullscreen. Controlled by MS.</value>
+    <value>Set a number (MS) for how long until the titlebar appears in fullscreen.</value>
   </data>
   <data name="Menu.FastFlags.Presets.FullscreenTitleBar.Title" xml:space="preserve">
     <value>Fullscreen Title Bar Timeout</value>
