@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -441,21 +441,6 @@ Click for more information</value>
   <data name="Enums.FlagPresets.MaterialVersion.Old" xml:space="preserve">
     <value>Old (Pre-2022)</value>
   </data>
-  <data name="Enums.FlagPresets.MSAAMode.Default" xml:space="preserve">
-    <value>Automatic</value>
-  </data>
-  <data name="Enums.FlagPresets.MSAAMode.x1" xml:space="preserve">
-    <value>1x MSAA</value>
-  </data>
-  <data name="Enums.FlagPresets.MSAAMode.x2" xml:space="preserve">
-    <value>2x MSAA</value>
-  </data>
-  <data name="Enums.FlagPresets.MSAAMode.x4" xml:space="preserve">
-    <value>4x MSAA</value>
-  </data>
-  <data name="Enums.FlagPresets.MSAAMode.x8" xml:space="preserve">
-    <value>8x MSAA</value>
-  </data>
   <data name="Enums.FlagPresets.RenderingMode.D3D10" xml:space="preserve">
     <value>Direct3D 10</value>
   </data>
@@ -767,17 +752,65 @@ Do NOT use this to import large "flag lists" made by other people that promise t
   <data name="Menu.FastFlags.Presets.EscapeMenuVersion.Title" xml:space="preserve">
     <value>Preferred escape menu version</value>
   </data>
+  <data name="Menu.FastFlags.Presets.TextureQualityEnabled.Description" xml:space="preserve">
+    <value>Enables the ability to toggle the texture quality levels. This sometimes breaks.</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.TextureQualityEnabled.Title" xml:space="preserve">
+    <value>Texture Quality Level Flag</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.TextureQualityOverride.Description" xml:space="preserve">
+    <value>Choose which level the texture quality should be at. From 1-3 as their values.</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.TextureQualityOverride.Title" xml:space="preserve">
+    <value>Texture Quality Level</value>
+  </data>
   <data name="Menu.FastFlags.Presets.FixDisplayScaling.Description" xml:space="preserve">
     <value>Roblox reduces your rendering quality, depending on display scaling. This toggle disables that.</value>
   </data>
   <data name="Menu.FastFlags.Presets.FixDisplayScaling.Title" xml:space="preserve">
     <value>Preserve rendering quality with display scaling</value>
   </data>
+     <data name="Menu.FastFlags.Presets.InGameChromeEnabled.Description" xml:space="preserve">
+    <value>Enable Roblox's newest in-game topbar.</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.InGameChromeEnabled.Title" xml:space="preserve">
+    <value>Chrome Menu</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.PhysicalSound.Description" xml:space="preserve">
+    <value>Changes sound pitch based off your physical velocity.</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.PhysicalSound.Title" xml:space="preserve">
+    <value>Physical Sound Velocity</value>
+  </data>
   <data name="Menu.FastFlags.Presets.FPSLimit.Description" xml:space="preserve">
     <value>Use a large number like 9999 for no limit. Set as 0 for defaults.</value>
   </data>
   <data name="Menu.FastFlags.Presets.FPSLimit.Title" xml:space="preserve">
     <value>Framerate limit</value>
+  </data>
+   <data name="Menu.FastFlags.Presets.IGFpsSetting.Description" xml:space="preserve">
+    <value>Disables the in-game Framerate cap. Use this if you want a custom FPS value.</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.IGFpsSetting.Title" xml:space="preserve">
+    <value>Disable In-Game Framerate cap.</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.FramerateUncapper.Description" xml:space="preserve">
+    <value>Disables Roblox's fps cap of 240.</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.FramerateUncapper.Title" xml:space="preserve">
+    <value>Framerate Uncapper</value>
+  </data>
+   <data name="Menu.FastFlags.Presets.QualityLevelOverride.Description" xml:space="preserve">
+    <value>Set a number from 1-21 for a fixed graphics quality. Set as 0 for defaults.</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.QualityLevelOverride.Title" xml:space="preserve">
+    <value>Fixed Graphics Quality</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.FullscreenTitleBar.Description" xml:space="preserve">
+    <value>Set a number for how long until the titlebar appears in fullscreen. Controlled by MS.</value>
+  </data>
+  <data name="Menu.FastFlags.Presets.FullscreenTitleBar.Title" xml:space="preserve">
+    <value>Fullscreen Title Bar Timeout</value>
   </data>
   <data name="Menu.FastFlags.Presets.HideGuis.Description" xml:space="preserve">
     <value>Toggled with [keyboard shortcuts]({0}). Only works if you're in the [Bloxstrap group]({1}).</value>
